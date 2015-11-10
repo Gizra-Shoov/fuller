@@ -65,8 +65,9 @@ describe('Visual monitor testing', function() {
         name: '1',
         exclude: [],
         remove: [],
-        hide: [],
-        screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
+        hide: [//'.search'
+         ],
+        screenWidth: selectedCaps == 'chrome' ? [960] : undefined,
       }, resultsCallback)
       .call(done);
   });
